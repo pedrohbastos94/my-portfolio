@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Avatar from "../../../../assets/Avatar.jpeg";
@@ -7,6 +9,7 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
+import { motion } from "framer-motion";
 
 const skillsSet = [
   {
@@ -79,7 +82,13 @@ export default function About() {
     <>
       <section className="container w-full lg:h-[755px] flex flex-col items-center justify-center mt-6 pb-10 sm:pb-32 lg:pb-[110px]  ">
         <div className=" flex items-center justify-center flex-col-reverse lg:flex-row">
-          <div className="w-full px-4 lg-max-w-[530px]">
+          <motion.div
+            className="w-full px-4 lg-max-w-[530px]"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -100 }}
+            transition={{ duration: 0.5 }}
+          >
             <h1 className="text-5xl text-red-500">Sobre</h1>
             <p className="text-red-400 mt-2">Olá, meu nome é</p>
             <h2 className="text-2xl font-medium">Pedro Bastos</h2>
@@ -132,7 +141,7 @@ export default function About() {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
 
           <Image
             width={420}

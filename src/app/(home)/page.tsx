@@ -12,7 +12,7 @@ export default function Home() {
     <main>
       <Toaster />
       <NavBar />
-      <section className=" py-25 px-6 sm:px-12 lg:px-30">
+      <section className=" py-36 px-6 sm:px-12 lg:px-30">
         <Hero />
         <About />
         <Skills />
