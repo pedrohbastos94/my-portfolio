@@ -10,6 +10,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import { motion } from "framer-motion";
+import { techBadgeAnimation } from "@/app/lib/animations";
 
 const skillsSet = [
   {
@@ -114,8 +115,14 @@ export default function About() {
                 "TypeScript",
                 "Tailwind CSS",
               ].map((name, index) => (
-                // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-                <TechBadge key={index} name={name} />
+                <motion.div
+                  // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+                  key={index}
+                  {...techBadgeAnimation}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
+                >
+                  <TechBadge name={name} />
+                </motion.div>
               ))}
             </div>
             <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
@@ -143,15 +150,23 @@ export default function About() {
             </div>
           </motion.div>
 
-          <Image
-            width={420}
-            height={404}
-            src={Avatar}
-            alt="Foto de Perfil do Pedro"
-            layout=""
-            objectFit=""
-            className="w-[300px] h-[300px] lg:w-[420px] lg:h-[404] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover"
-          />
+          <motion.div
+            initial={{ opacity: 0, y: 200, scale: 0.5 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 200, scale: 0.5 }}
+            transition={{ duration: 0.5 }}
+            className="origin-center"
+          >
+            <Image
+              width={420}
+              height={404}
+              src={Avatar}
+              alt="Foto de Perfil do Pedro"
+              layout=""
+              objectFit=""
+              className="w-[300px] h-[300px] lg:w-[420px] lg:h-[404] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover"
+            />
+          </motion.div>
         </div>
       </section>
     </>

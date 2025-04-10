@@ -1,9 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import TechBadge from "@/app/components/Tech-badge/techBadge";
+import { motion } from "framer-motion";
+import { fadeUpAnimation, techBadgeAnimation } from "@/app/lib/animations";
+import { duration } from "@mui/material";
 
 export const ExperienceItem = () => {
   return (
-    <div className="grid grid-cols-[1fr] md:grid-cols-[40px,1fr] gap-4 md:gap-10">
+    <motion.div
+      className="grid grid-cols-[1fr] md:grid-cols-[40px,1fr] gap-4 md:gap-10"
+      {...fadeUpAnimation}
+      transition={{ duration: 0.5 }}
+    >
       <div className="flex flex-col items-start gap-4">
         <div className="rounded-full border border-gray-500 p-0.5">
           <Image
@@ -36,13 +45,18 @@ export const ExperienceItem = () => {
         <p className="text-gray-400 text-sm mb-3 mt-6 font-semibold">
           Competências
         </p>
-        <div className="flex gap-x-2 gap-y-3 flex-wrap lg-max-w-[350px] mb-8">
-          <TechBadge name="Javascript" />
-          <TechBadge name="React" />
-          <TechBadge name="TypeScript" />
-          <TechBadge name="Tailwind" />
+        <div className="flex gap-x-2 gap-y-3 flex-wrap lg:max-w-[350px] mb-8">
+          {["Javascript", "React", "TypeScript", "Tailwind"].map((tech, i) => (
+            <motion.div
+              key={tech}
+              {...techBadgeAnimation}
+              transition={{ duration: 0.3, delay: i * 0.1 }}
+            >
+              <TechBadge name={tech} />
+            </motion.div>
+          ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
