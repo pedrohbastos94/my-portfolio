@@ -7,7 +7,7 @@ import BackToTop from "./components/BackToTop/backtotop";
 export const metadata: Metadata = {
   title: "My Portifolio",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
 };
 
