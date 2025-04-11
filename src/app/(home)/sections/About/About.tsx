@@ -96,14 +96,12 @@ export default function About() {
               Sou apaixonado por tecnologia e tenho como missão me tornar um
               engenheiro de software excepcional. Atualmente, estou iniciando
               minha carreira na área de Engenharia de Software, buscando aplicar
-              meus conhecimentos teóricos na prática por meio de estágios,
-              projetos e colaborações em equipe. Estou focado em desenvolver
-              minhas habilidades de resolução de problemas e comunicação,
-              enquanto aprofundo minha compreensão do ciclo de vida do
-              desenvolvimento de software. Estou aberto a oportunidades de
-              estágio, projetos desafiadores e mentoria, ansioso para aprender
-              com profissionais experientes e contribuir para o avanço da
-              tecnologia.
+              meus conhecimentos teóricos na prática por meio de projetos e
+              colaborações em equipe. Estou focado em desenvolver minhas
+              habilidades de resolução de problemas e comunicação, enquanto
+              aprofundo minha compreensão do ciclo de vida do desenvolvimento de
+              software. Estou ansioso para aprender com profissionais
+              experientes e contribuir para o avanço da tecnologia.
             </p>
             <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
               {[
