@@ -5,6 +5,9 @@ import NavBar from "./components/navBar/navBar";
 
 export const metadata: Metadata = {
   title: "My Portifolio",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 const oxanium = Oxanium({
