@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat, Oxanium } from "next/font/google";
+import NavBar from "./components/navBar/navBar";
 
 export const metadata: Metadata = {
   title: "My Portifolio",
@@ -26,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${oxanium.variable} ${montserrat.variable}`}>
       <body className="bg-gray-900 text-gray-100 antialiased bg-[url(/background2.png)] bg-no-repeat md:bg-right-top bg-top">
+        <NavBar />
         <main className="mx-auto md:py-0">{children}</main>
       </body>
     </html>
