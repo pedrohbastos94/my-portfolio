@@ -12,13 +12,36 @@ export default function Home() {
     <main>
       <Toaster />
       <NavBar />
-      <section className=" py-36 px-6 sm:px-12 lg:px-30">
+
+      <section id="hero" className="py-24 px-6 sm:px-12 lg:px-30">
         <Hero />
+      </section>
+
+      <section id="about" className="scroll-mt-24 py-20 px-6 sm:px-12 lg:px-30">
         <About />
+      </section>
+
+      <section
+        id="skills"
+        className="scroll-mt-24 py-20 px-6 sm:px-12 lg:px-30"
+      >
         <Skills />
+      </section>
+
+      <section
+        id="experience"
+        className="scroll-mt-24 py-20 px-6 sm:px-12 lg:px-30"
+      >
         <WorkExperience />
+      </section>
+
+      <section
+        id="contact"
+        className="scroll-mt-24 py-20 px-6 sm:px-12 lg:px-30"
+      >
         <Contact />
       </section>
+
       <footer className="mt-12">
         <Footer />
       </footer>

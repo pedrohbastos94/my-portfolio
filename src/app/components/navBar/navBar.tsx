@@ -8,10 +8,9 @@ import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
 
 const items: NavItemInterface[] = [
-  { href: "#hero", label: "Início" },
-  { href: "#sobre", label: "Sobre" },
+  { href: "#about", label: "Sobre" },
   { href: "#skills", label: "Habilidades" },
-  { href: "#projects", label: "Projetos" },
+  { href: "#experience", label: "Experiências" },
   { href: "#contact", label: "Contato" },
 ];
 
@@ -32,7 +31,7 @@ export default function NavBar() {
             alt="Logo PB"
             width={300}
             height={49}
-            className="w-[200px] h-auto" // ajustável
+            className="w-[200px] h-auto"
             priority
           />
         </a>
@@ -55,7 +54,6 @@ export default function NavBar() {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-black/10 px-6 pb-2 flex flex-col gap-3">
           {items.map((item) => (

@@ -23,3 +23,6 @@
 
   --radius-xl: 0.625rem;
 }
+html {
+  scroll-behavior: smooth;
+}
