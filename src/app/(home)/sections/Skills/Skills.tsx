@@ -2,18 +2,24 @@
 
 import { KnownSkills } from "./known-Skills";
 import { SectionTitle } from "./Tiitle/sectionTitle";
-import JavascriptIcon from "@mui/icons-material/Javascript";
-import CssIcon from "@mui/icons-material/Css";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import { motion } from "framer-motion";
+import {
+  TbBrandReact,
+  TbBrandTailwind,
+  TbBrandNextjs,
+  TbBrandJavascript,
+  TbBrandNodejs,
+  TbBrandGithub,
+} from "react-icons/tb";
 
 export default function Skills() {
   const skills = [
-    { icon: <JavascriptIcon />, name: "JavaScript" },
-    { icon: <span>&lt;/&gt;</span>, name: "React" },
-    { icon: <GitHubIcon />, name: "Node.js" },
-    { icon: <span>&lt;/&gt;</span>, name: "Tailwind" },
-    { icon: <span>&lt;/&gt;</span>, name: "Nextjs" },
+    { icon: <TbBrandJavascript />, name: "JavaScript" },
+    { icon: <TbBrandReact />, name: "React" },
+    { icon: <TbBrandNodejs />, name: "Node.js" },
+    { icon: <TbBrandTailwind />, name: "Tailwind" },
+    { icon: <TbBrandNextjs />, name: "Nextjs" },
+    { icon: <TbBrandGithub />, name: "GitbHub" },
   ];
 
   return (

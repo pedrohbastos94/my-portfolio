@@ -3,6 +3,7 @@
 import { useState } from "react";
 import ModelTrainingIcon from "@mui/icons-material/ModelTraining";
 import { Typewriter } from "react-simple-typewriter";
+import { FcIdea } from "react-icons/fc";
 
 export default function Hero() {
   const [showRest, setShowRest] = useState(false);
@@ -28,10 +29,7 @@ export default function Hero() {
 
           {showRest && (
             <>
-              <ModelTrainingIcon
-                className="text-red-600 inline-block"
-                fontSize="inherit"
-              />
+              <FcIdea />
               <Typewriter
                 words={[" precisa"]}
                 cursor

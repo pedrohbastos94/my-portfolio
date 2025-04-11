@@ -13,7 +13,6 @@ export const ExperienceItem = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex flex-col items-start gap-4">
-        {/* Tooltip wrapper */}
         <div className="relative group">
           <a
             href="https://www.atados.com.br"
@@ -30,13 +29,12 @@ export const ExperienceItem = () => {
             />
           </a>
 
-          {/* Tooltip content */}
           <div className="absolute z-10 hidden group-hover:flex flex-col gap-2 bg-black/20 text-white text-xs p-4 rounded-lg w-64 top-full left-12 mt-2 backdrop-blur-sm transition-all">
             <p>
               A maior plataforma de voluntariado do Brasil. A Atados é uma
               plataforma que conecta pessoas e causas sociais.
             </p>
-            <span className="text-red-400 ">Clique na logo para visitar</span>
+            <span className="text-red-400 ">Clique para visitar</span>
           </div>
         </div>
 

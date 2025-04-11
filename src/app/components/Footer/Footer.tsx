@@ -1,8 +1,7 @@
 "use client";
 
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from "@mui/icons-material/Email";
+import { MdOutlineEmail } from "react-icons/md";
+import { TbBrandGithub, TbBrandLinkedin } from "react-icons/tb";
 
 export default function Footer() {
   return (
@@ -14,7 +13,7 @@ export default function Footer() {
             onClick={() => window.open("https://github.com/pedrohbastos94")}
             className="p-2 hover:text-blue-400 cursor-pointer"
           >
-            <GitHubIcon className="w-8 h-8" />
+            <TbBrandGithub className="w-6 h-6" />
           </button>
 
           <button
@@ -24,7 +23,7 @@ export default function Footer() {
             }
             className="p-2 hover:text-blue-400 cursor-pointer"
           >
-            <LinkedInIcon className="w-8 h-8" />
+            <TbBrandLinkedin className="w-6 h-6" />
           </button>
 
           <button
@@ -34,7 +33,7 @@ export default function Footer() {
             }}
             className="p-2 hover:text-blue-400 cursor-pointer"
           >
-            <EmailIcon className="w-8 h-8" />
+            <MdOutlineEmail className="w-6 h-6" />
           </button>
         </div>
 

@@ -5,12 +5,11 @@ import Image from "next/image";
 import Avatar from "../../../../assets/Avatar.jpeg";
 import TechBadge from "@/app/components/Tech-badge/techBadge";
 import Button from "@/app/components/Button/button";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from "@mui/icons-material/Email";
 import { motion } from "framer-motion";
 import { techBadgeAnimation } from "@/app/lib/animations";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { TbBrandLinkedin, TbBrandGithub } from "react-icons/tb";
 
 const skillsSet = [
   {
@@ -66,15 +65,15 @@ const skillsSet = [
 const MOCK_CONTACTS = [
   {
     url: "https://github.com/pedrohbastos94",
-    icon: <GitHubIcon />,
+    icon: <TbBrandGithub />,
   },
   {
     url: "https://www.linkedin.com/in/pedrinbastos/",
-    icon: <LinkedInIcon />,
+    icon: <TbBrandLinkedin />,
   },
   {
     url: "mailto:pedro.bastoshf@gmail.com",
-    icon: <EmailIcon />,
+    icon: <MdOutlineEmail />,
   },
 ];
 
@@ -128,7 +127,7 @@ export default function About() {
             <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
               <Button className="w-max">
                 Entre em Contato
-                <ArrowRightAltIcon />
+                <FaLongArrowAltRight />
               </Button>
 
               <div className="text-2xl text-gray-600 flex items-center h-20 gap-3">
