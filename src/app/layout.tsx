@@ -5,7 +5,7 @@ import NavBar from "./components/navBar/navBar";
 import BackToTop from "./components/BackToTop/backtotop";
 
 export const metadata: Metadata = {
-  title: "My Portifolio",
+  title: "Portfólio © Pedro Bastos",
   icons: {
     icon: "/favicon.png",
   },
