@@ -4,6 +4,7 @@ import NavBar from "../components/navBar/navBar";
 import Toaster from "../components/toaster/toaster";
 import About from "./sections/About/About";
 import Hero from "./sections/Hero/Hero";
+import HighlightedProjects from "./sections/Highlighted-Projects/highlighted-projects";
 import Skills from "./sections/Skills/Skills";
 import WorkExperience from "./sections/workExperience/experience";
 
@@ -26,6 +27,10 @@ export default function Home() {
         className="scroll-mt-24 py-20 px-6 sm:px-12 lg:px-30"
       >
         <Skills />
+      </section>
+
+      <section className="scroll-mt-24 py-20 px-6 sm:px-12 lg:px-30">
+        <HighlightedProjects />
       </section>
 
       <section

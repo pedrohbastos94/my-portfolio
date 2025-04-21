@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import ModelTrainingIcon from "@mui/icons-material/ModelTraining";
 import { Typewriter } from "react-simple-typewriter";
 import { FcIdea } from "react-icons/fc";
 
