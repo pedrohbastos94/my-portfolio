@@ -50,15 +50,15 @@ export default function ProjectCard() {
         </p>
         <span className="text-gray-300 text-sm font-medium block mt-auto truncate">
           <div className="flex flex-wrap gap-2 justify-center items-center">
-            {skills.map((skill, index) => (
+            {skills.map((skill, i) => (
               <motion.div
                 // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-                key={index}
+                key={i}
                 initial={{ opacity: 0, x: -50 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
               >
-                <KnownSkills skill={skill} />
+                {skill.icon}
               </motion.div>
             ))}
           </div>
