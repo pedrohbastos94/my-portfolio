@@ -10,6 +10,7 @@ import Image from "next/image";
 const items: NavItemInterface[] = [
   { href: "#about", label: "Sobre" },
   { href: "#skills", label: "Habilidades" },
+  { href: "#projects", label: "Projetos" },
   { href: "#experience", label: "Experiências" },
   { href: "#contact", label: "Contato" },
 ];

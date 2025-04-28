@@ -1,3 +1,4 @@
+import { MdDescription } from "react-icons/md";
 import Contact from "../components/Contact-form/contact";
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/navBar/navBar";
@@ -13,7 +14,6 @@ export default function Home() {
     <main>
       <Toaster />
       <NavBar />
-
       <section id="hero" className="py-24 px-6 sm:px-12 lg:px-30">
         <Hero />
       </section>
@@ -29,7 +29,10 @@ export default function Home() {
         <Skills />
       </section>
 
-      <section className="scroll-mt-24 py-20 px-6 sm:px-12 lg:px-30">
+      <section
+        id="projects"
+        className="scroll-mt-24 py-20 px-6 sm:px-12 lg:px-30"
+      >
         <HighlightedProjects />
       </section>
 
@@ -39,17 +42,6 @@ export default function Home() {
       >
         <WorkExperience />
       </section>
-
-      <section
-        id="contact"
-        className="scroll-mt-24 py-20 px-6 sm:px-12 lg:px-30"
-      >
-        <Contact />
-      </section>
-
-      <footer className="mt-12">
-        <Footer />
-      </footer>
     </main>
   );
 }

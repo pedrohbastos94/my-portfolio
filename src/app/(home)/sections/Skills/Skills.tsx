@@ -36,15 +36,14 @@ export default function Skills() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        {skills.map((skill, index) => (
+        {skills.map((tech, i) => (
           <motion.div
-            // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-            key={index}
+            key={tech.name}
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.4, delay: index * 0.1 }}
+            transition={{ duration: 0.4, delay: i * 0.1 }}
           >
-            <KnownSkills skill={skill} />
+            <KnownSkills skill={tech} />
           </motion.div>
         ))}
       </motion.div>

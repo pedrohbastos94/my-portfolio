@@ -78,6 +78,12 @@ const MOCK_CONTACTS = [
 ];
 
 export default function About() {
+  const handleContact = () => {
+    const contactSection = document.querySelector("#contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <section className="container w-full lg:h-[755px] flex flex-col items-center justify-center mt-6 pb-10 sm:pb-32 lg:pb-[110px]  ">
@@ -123,7 +129,7 @@ export default function About() {
               ))}
             </div>
             <div className="mt-6 lg:mt-10 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
-              <Button className="w-max">
+              <Button className="w-max" onClick={handleContact}>
                 Entre em Contato
                 <FaLongArrowAltRight />
               </Button>

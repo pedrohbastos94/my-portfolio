@@ -16,7 +16,7 @@ export default function HighlightedProjects() {
 
         <p className="flex items-center gap-1.5">
           <span className="text-gray-400">Se interessou?</span>
-          <Link className="inline-flex" href={"/projects"}>
+          <Link className="inline-flex" href={"/project"}>
             Ver todos
             <HiArrowNarrowRight />
           </Link>
