@@ -13,12 +13,12 @@ import {
 } from "react-icons/tb";
 
 const skills = [
-  { icon: <TbBrandJavascript name="" /> },
-  { icon: <TbBrandReact name="" /> },
-  { icon: <TbBrandNodejs name="" /> },
-  { icon: <TbBrandTailwind name="" /> },
-  { icon: <TbBrandNextjs name="" /> },
-  { icon: <TbBrandGithub name="" /> },
+  { icon: <TbBrandJavascript size={32} name="" /> },
+  { icon: <TbBrandReact size={32} name="" /> },
+  { icon: <TbBrandNodejs size={32} name="" /> },
+  { icon: <TbBrandTailwind size={32} name="" /> },
+  { icon: <TbBrandNextjs size={32} name="" /> },
+  { icon: <TbBrandGithub size={32} name="" /> },
 ];
 
 export default function ProjectCard() {
