@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import Avatar from "../../../../assets/Avatar.jpeg";
+import Avatar from "../../../../assets/Avatar.png";
 import TechBadge from "@/app/components/Tech-badge/techBadge";
 import Button from "@/app/components/Button/button";
 import { motion } from "framer-motion";
@@ -167,7 +167,7 @@ export default function About() {
               alt="Foto de Perfil do Pedro"
               layout=""
               objectFit=""
-              className="w-[300px] h-[300px] lg:w-[420px] lg:h-[404] mb-6 lg:mb-0 shadow-2xl rounded-lg object-cover"
+              className="w-[300px] h-[300px] lg:w-[420px] lg:h-[404] mb-6 lg:mb-0 shadow-2xl rounded-[200px] object-cover"
             />
           </motion.div>
         </div>
