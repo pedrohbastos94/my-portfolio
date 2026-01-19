@@ -50,7 +50,7 @@ export const ExperienceItem = () => {
 
       <div>
         <h4 className="text-gray-300">Desenvolvedor Front-End</h4>
-        <span className="text-gray-500">julho 2024 - O momento</span>
+        <span className="text-gray-500">julho 2024 - julho 2025</span>
         <p className="text-gray-400">
           Responsável por solucionar bugs diários e implementação de novas
           funcionalidades e otimizações nos projetos existentes.
